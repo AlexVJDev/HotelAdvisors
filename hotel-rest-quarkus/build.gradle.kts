@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "ru.avv"
+group = "ru.avv.quarkus"
 version = "1.0-SNAPSHOT"
 
 repositories {
