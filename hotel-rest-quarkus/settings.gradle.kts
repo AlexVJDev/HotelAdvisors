@@ -1,1 +1,0 @@
-rootProject.name = "hotel-rest-quarkus"
