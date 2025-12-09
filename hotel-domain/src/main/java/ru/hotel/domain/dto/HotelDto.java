@@ -1,7 +1,6 @@
 package ru.hotel.domain.dto;
 
-import ru.hotel.domain.entity.HotelEntity;
 
-public class HotelDto extends HotelEntity {
+public record HotelDto(Long id, String name, String category, String notes)  {
 
 }

@@ -10,6 +10,7 @@ repositories {
 
 
 dependencies {
+    implementation(project(":hotel-domain"))
     implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.30.2"))
     implementation("io.quarkus:quarkus-hibernate-orm:3.30.2")
     implementation("io.quarkus:quarkus-rest-jackson:3.30.2")
