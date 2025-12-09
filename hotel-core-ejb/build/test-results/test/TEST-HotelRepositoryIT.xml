@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HotelRepositoryIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-09T23:08:40.122Z" hostname="TOP64" time="0.359">
+  <properties/>
+  <testcase name="testFindAll()" classname="HotelRepositoryIT" time="0.359"/>
+  <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        hotels
+        (category, name, notes) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        hotels
+        (category, name, notes) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        he1_0.id,
+        he1_0.category,
+        he1_0.name,
+        he1_0.notes 
+    from
+        hotels he1_0
+]]></system-out>
+  <system-err><![CDATA[Dec 10, 2025 2:08:38 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: hotelPU]
+Dec 10, 2025 2:08:38 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 7.1.11.Final
+Dec 10, 2025 2:08:39 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Dec 10, 2025 2:08:39 AM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+Dec 10, 2025 2:08:39 AM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator logConnectionInfo
+INFO: HHH10001005: Database info:
+	Database JDBC URL [jdbc:mariadb://localhost:3306/hotel_core]
+	Database driver: MariaDB Connector/J
+	Database dialect: MariaDBDialect
+	Database version: 12.1.2
+	Default catalog/schema: hotel_core/undefined
+	Autocommit mode: false
+	Isolation level: REPEATABLE_READ
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+Dec 10, 2025 2:08:40 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+]]></system-err>
+</testsuite>

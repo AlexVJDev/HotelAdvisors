@@ -14,6 +14,7 @@ dependencies {
     implementation(project(":hotel-domain"))
     implementation("org.hibernate:hibernate-core:7.1.11.Final")
 
+    compileOnly("jakarta.inject:jakarta.inject-api:2.0.1")
     compileOnly("jakarta.ejb:jakarta.ejb-api:4.0.1")
     compileOnly("jakarta.persistence:jakarta.persistence-api:3.2.0")
     // если нужно будет:
